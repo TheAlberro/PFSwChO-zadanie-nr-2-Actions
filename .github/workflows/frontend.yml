@@ -32,8 +32,7 @@ jobs:
           file: ./dockerfile.v1
           push: true
           tags: |
-              theAlberro/FullStack_zadanie2:v1
-			
+              theAlberro/FullStack_zadanie2:v1			
   multiplatform-build:
     name: Budowa i publikacja obrazow na repozytorium wieloplatformowo
     runs-on: ubuntu-latest
@@ -65,8 +64,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/ppc64le,linux/s390x
           tags: |
-              theAlberro/FullStack_zadanie2_multiplatform:v1
-			
+              theAlberro/FullStack_zadanie2_multiplatform:v1			
   multistage-build:
     name: Budowa i publikacja obrazow na rezpozytorium wielopoziomowo
     runs-on: ubuntu-latest
